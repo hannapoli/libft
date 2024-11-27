@@ -1,32 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/26 16:46:20 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/27 14:52:36 by hpolishc         ###   ########.fr       */
+/*   Created: 2024/11/27 13:34:55 by hpolishc          #+#    #+#             */
+/*   Updated: 2024/11/27 14:30:17 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
+#include "libft.h"
 
+int	ft_toupper(int c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	else
+		return (c);
+}
 
-# include <stdio.h>
-//# include <stdlib.h>
-//# include <unistd.h>
+/*#include <ctype.h>
 
-# define LIBFT_H
+int	main(void)
+{
+	int	c1;
+	int	c2;
 
-int	ft_isalnum(int c);
-int	ft_isalpha(int c);
-int	ft_isascii(int c);
-int	ft_isdigit(int c);
-int	ft_isprint(int c);
-int	ft_tolower(int c);
-int	ft_toupper(int c);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
-size_t	ft_strlen(const char *str);
-
-#endif
+	c1 = 'Z';
+	c2 = 'u';
+	printf("Recomposed function:\n");
+	printf("%d\n", ft_toupper(c1));
+	printf("%d\n", ft_toupper(c2));
+	printf("Original function:\n");
+	printf("%d\n", toupper(c1));
+	printf("%d\n", toupper(c2));
+}
+*/

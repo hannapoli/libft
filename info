@@ -1,46 +1,32 @@
 create .h
 create main ONLY to check functions (in comments for each function for example)
+Check with original funcrtions
+Libft.h - comment #includes except the one we use for malloc stuff
 REMEMBER Stdheader
+return 1024(alpha), 8(alnum), etc.- internal classification used by the implementation of <ctype.h> functions
 GIT add, commit, push!
 
-• isalpha - checks for an alphanumeric character
-• isdigit - checks for a digit (0 through 9).
-• isalnum - checks for an alphanumeric character
-• isascii - checks whether c is a 7-bit unsigned char value that  fits  into
-              the ASCII character set.
-• isprint -  checks for any printable character including space.
-• strlen - calculates the length of a string. ✅️
-• memset - fills  the  first  n  bytes of the memory area
-       pointed to by s with the constant byte c. wtf??? returns a pointer to the memory area s.
-• bzero - function  erases  the  data  in the n bytes of the memory
-       starting at the location pointed to by s, by writing zeros (bytes  con‐
-       taining '\0') to that area. Return value - none.
-• memcpy - copies  n bytes from memory area src to memory
-       area dest.  The memory areas must not overlap. returns a pointer to dest
-• memmove - copies n bytes from memory area src to memory
-       area dest.  The memory areas may overlap: copying takes place as though
-       the  bytes in src are first copied into a temporary array that does not
-       overlap src or dest, and the bytes are then copied from  the  temporary
-       array to dest. returns a pointer to dest
-
-• strlcpy - copies a string.✅️
-
+• ft_isalpha - checks for an alphabetic character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
+• ft_isdigit - checks for a digit (0 through 9). It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
+• ft_isalnum - checks for an alphanumeric character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
+• ft_isascii - checks whether c is an ASCII character. 
+• ft_isprint - checks for any printable character including space. 
+• ft_strlen - calculates the length of a string. 
+• memset - fills  the  first  n  bytes of the memory area pointed to by s with the constant byte c. wtf??? returns a pointer to the memory area s.
+• bzero - function  erases  the  data  in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes  containing '\0') to that area. Return value - none.
+• memcpy - copies  n bytes from memory area src to memory area dest.  The memory areas must not overlap. returns a pointer to dest
+• memmove - copies n bytes from memory area src to memory area dest.  The memory areas may overlap: copying takes place as though the  bytes in src are first copied into a temporary array that does not overlap src or dest, and the bytes are then copied from  the  temporary array to dest. returns a pointer to dest
+• ft_strlcpy - copies a string. 😭️
 • strlcat - concatenates (links together) a string. takes the full size of the buffer (not just the length) and guarantee to NUL-terminate the result. appends the NUL-terminated string src to the end of dst.  It will append at most size - strlen(dst) - 1 bytes, NUL-terminating the result. Returns the total length: initial length of dst plus the length of src. 
-
-• toupper - converts lowercase letters to uppercase.
-• tolower - converts uppercase letters to lowercase.
+• ft_toupper - converts lowercase letters to uppercase.
+• ft_tolower - converts uppercase letters to lowercase.
 • strchr - returns a pointer to the first occurrence of the character c in the string s or NULL if the character is not found.
 • strrchr - returns a pointer to the last occurrence of  the character c in the string s or NULL if the character is not found. 
-
 • strncmp - compares the two strings s1 and s2 (alphabetically?). returns an integer less than, equal to, or greater than zero if s1 (or the first n bytes thereof) is found, respectively, to be less than, to match, or be greater than s2.
-
 • memchr - scans  the  initial n bytes of the memory area pointed to by s for the first instance of c. return a pointer to the matching byte or NULL if the character does not occur in the given memory area.
 • memcmp - return a pointer to the matching byte or NULL if the character does not occur in the given memory area. returns  an  integer  less  than,  equal  to,  or greater than zero if the first n bytes of s1 is found, respectively, to be less than, to match, or be greater than the first n bytes of s2.
-
 • strnstr - locate a substring in a string. locates the first occurrence of the null-terminated string little in the string big, where not more than len characters are searched.  Characters that appear after a ‘\0’ character are not searched. If little is an empty string, big is returned; if little occurs nowhere in big, NULL is returned; otherwise a pointer to the first character of the first occurrence of little is returned.
-
 • atoi - convert a string to an integer
-
 Para implementar estas otras dos funciones, tendrás que utilizar malloc():
 • calloc - allocates memory for an array of  nmemb  elements
        of  size bytes each and returns a pointer to the allocated memory.  The

@@ -1,32 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/26 16:46:20 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/27 14:52:36 by hpolishc         ###   ########.fr       */
+/*   Created: 2024/11/27 11:08:36 by hpolishc          #+#    #+#             */
+/*   Updated: 2024/11/27 14:20:56 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
+#include "libft.h"
 
+int	ft_isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
+}
 
-# include <stdio.h>
-//# include <stdlib.h>
-//# include <unistd.h>
+/*#include <ctype.h>
 
-# define LIBFT_H
+int	main(void)
+{
+	int	c1;
+	int	c2;
 
-int	ft_isalnum(int c);
-int	ft_isalpha(int c);
-int	ft_isascii(int c);
-int	ft_isdigit(int c);
-int	ft_isprint(int c);
-int	ft_tolower(int c);
-int	ft_toupper(int c);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
-size_t	ft_strlen(const char *str);
-
-#endif
+	c1 = 'a';
+	c2 = '2';
+	printf("Recomposed function:\n");
+	printf("%d\n", ft_isdigit(c1));
+	printf("%d\n", ft_isdigit(c2));
+	printf("Original function:\n");
+	printf("%d\n", isdigit(c1));
+	printf("%d\n", isdigit(c2));
+	return (0);
+}
+*/

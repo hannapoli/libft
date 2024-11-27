@@ -1,32 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/26 16:46:20 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/27 14:52:36 by hpolishc         ###   ########.fr       */
+/*   Created: 2024/11/27 12:02:21 by hpolishc          #+#    #+#             */
+/*   Updated: 2024/11/27 14:25:35 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
+#include "libft.h"
 
+int	ft_isprint(int c)
+{
+	if (c >= 32 && c <= 126)
+		return (1);
+	else
+		return (0);
+}
 
-# include <stdio.h>
-//# include <stdlib.h>
-//# include <unistd.h>
+/*#include <ctype.h>
 
-# define LIBFT_H
+int	main(void)
+{
+	int	c1;
+	int	c2;
 
-int	ft_isalnum(int c);
-int	ft_isalpha(int c);
-int	ft_isascii(int c);
-int	ft_isdigit(int c);
-int	ft_isprint(int c);
-int	ft_tolower(int c);
-int	ft_toupper(int c);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
-size_t	ft_strlen(const char *str);
-
-#endif
+	c1 = '#';
+	c2 = '	';
+	printf("Recomposed function:\n");
+	printf("%d\n", ft_isprint(c1));
+	printf("%d\n", ft_isprint(c2));
+	printf("Original function:\n");
+	printf("%d\n", isprint(c1));
+	printf("%d\n", isprint(c2));
+	return (0);
+}
+*/
