@@ -1,4 +1,4 @@
-create .h
+header VSC Linux / Windows : Ctrl + Alt + H.
 create main ONLY to check functions (in comments for each function for example)
 Check with original funcrtions
 Libft.h - comment #includes except the one we use for malloc stuff
@@ -12,12 +12,15 @@ GIT add, commit, push!
 • ft_isascii - checks whether c is an ASCII character. 
 • ft_isprint - checks for any printable character including space. 
 • ft_strlen - calculates the length of a string. 
-• memset - fills  the  first  n  bytes of the memory area pointed to by s with the constant byte c. wtf??? returns a pointer to the memory area s.
+• ft_memset - sets the first count bytes of dest to the value c. The value of c is converted to an unsigned character. returns a pointer to the memory area s.
 • bzero - function  erases  the  data  in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes  containing '\0') to that area. Return value - none.
 • memcpy - copies  n bytes from memory area src to memory area dest.  The memory areas must not overlap. returns a pointer to dest
 • memmove - copies n bytes from memory area src to memory area dest.  The memory areas may overlap: copying takes place as though the  bytes in src are first copied into a temporary array that does not overlap src or dest, and the bytes are then copied from  the  temporary array to dest. returns a pointer to dest
-• ft_strlcpy - copies a string. 😭️
+• ft_strlcpy - copies a string.
+
 • strlcat - concatenates (links together) a string. takes the full size of the buffer (not just the length) and guarantee to NUL-terminate the result. appends the NUL-terminated string src to the end of dst.  It will append at most size - strlen(dst) - 1 bytes, NUL-terminating the result. Returns the total length: initial length of dst plus the length of src. 
+*****************might neeed the same kind of macro i used in strlcpy**************
+
 • ft_toupper - converts lowercase letters to uppercase.
 • ft_tolower - converts uppercase letters to lowercase.
 • strchr - returns a pointer to the first occurrence of the character c in the string s or NULL if the character is not found.

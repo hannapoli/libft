@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 16:55:55 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/27 15:04:07 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/11/28 22:30:14 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (length);
 }
 
-#include <string.h>
+/*#include <string.h>
 #include <stdlib.h>
 
 int	main(void)
@@ -44,8 +44,16 @@ int	main(void)
 	printf("Recomposed function:\n");
 	printf("The length is %zu\n", ft_strlcpy(dst, src, sizeof(dst)));
 	printf("The copied string: %s\n", dst);
+#ifdef __DEFAULT_SOURCE
+
 	printf("Original function:\n");
-/*	printf("The length is %zu\n", strlcpy(dst, src, sizeof(dst)));
-	printf("The copied string: %s\n", dst);*/
+	printf("The length is %zu\n", strlcpy(dst, src, sizeof(dst)));
+	printf("The copied string: %s\n", dst);
+#else
+
+	printf("The original strlcpy is not available on this system.\n");
+#endif
+
 	return (0);
 }
+*/

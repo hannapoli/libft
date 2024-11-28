@@ -1,33 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/26 16:46:20 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/28 22:30:15 by hpolishc         ###   ########.fr       */
+/*   Created: 2024/11/28 16:38:06 by hpolishc          #+#    #+#             */
+/*   Updated: 2024/11/28 21:35:24 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
+#include "libft.h"
 
+void	*ft_memset(void *s, int c, size_t n)
+{
+	unsigned char	*ptr;
+	size_t			i;
 
-# include <stdio.h>
-//# include <stdlib.h>
-//# include <unistd.h>
+	ptr = s;
+	i = 0;
+	while (i < n)
+	{
+		ptr[i] = c;
+		i++;
+	}
+	return (s);
+}
 
-# define LIBFT_H
+/*#include <string.h>
 
-int	ft_isalnum(int c);
-int	ft_isalpha(int c);
-int	ft_isascii(int c);
-int	ft_isdigit(int c);
-int	ft_isprint(int c);
-int	ft_tolower(int c);
-int	ft_toupper(int c);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
-size_t	ft_strlen(const char *str);
-void *ft_memset(void *s, int c, size_t n);
+int	main(void)
+{
+	char	str[50] = "Urduliz 42";
+	char	*ptr;
 
-#endif
+	ptr = ft_memset(str, 'A', 7);
+	printf("The new string is: %s\n", ptr);
+	return (0);
+}
+*/
