@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 16:55:55 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/28 22:30:14 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/11/29 13:08:47 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t	n;
+	size_t	i;
 	size_t	length;
 
 	length = 0;
@@ -22,29 +22,28 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		length++;
 	if (size > 0)
 	{
-		n = 0;
-		while (n < (size - 1) && src[n] != '\0')
+		i = 0;
+		while (i < (size - 1) && src[i] != '\0')
 		{
-			dst[n] = src[n];
-			n++;
+			dst[i] = src[i];
+			i++;
 		}
-		dst[n] = '\0';
+		dst[i] = '\0';
 	}
 	return (length);
 }
-
-/*#include <string.h>
-#include <stdlib.h>
+/*
+#include <string.h>
 
 int	main(void)
 {
 	char	src[] = "Up2You!";
 	char	dst[10];
 
-	printf("Recomposed function:\n");
+	printf("Reimplemented function:\n");
 	printf("The length is %zu\n", ft_strlcpy(dst, src, sizeof(dst)));
 	printf("The copied string: %s\n", dst);
-#ifdef __DEFAULT_SOURCE
+#if defined__APPLE__ || defined__BSD_VISIBLE || defined_GNU_SOURCE
 
 	printf("Original function:\n");
 	printf("The length is %zu\n", strlcpy(dst, src, sizeof(dst)));

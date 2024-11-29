@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 11:34:49 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/27 14:23:34 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/11/29 11:02:32 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	main(void)
 
 	c1 = '&';
 	c2 = '	';
-	printf("Recomposed function:\n");
+	printf("Reimplemented function:\n");
 	printf("%d\n", ft_isascii(c1));
 	printf("%d\n", ft_isascii(c2));
 	printf("Original function:\n");

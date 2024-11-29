@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 13:34:55 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/27 14:30:17 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/11/29 11:03:54 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	main(void)
 
 	c1 = 'Z';
 	c2 = 'u';
-	printf("Recomposed function:\n");
+	printf("Reimplemented function:\n");
 	printf("%d\n", ft_toupper(c1));
 	printf("%d\n", ft_toupper(c2));
 	printf("Original function:\n");
