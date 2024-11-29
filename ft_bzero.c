@@ -1,45 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/28 16:38:06 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/29 15:04:40 by hpolishc         ###   ########.fr       */
+/*   Created: 2024/11/29 13:24:41 by hpolishc          #+#    #+#             */
+/*   Updated: 2024/11/29 14:48:41 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*ptr;
-	size_t			i;
+	char	*ptr;
+	size_t	i;
 
 	ptr = s;
 	i = 0;
 	while (i < n)
 	{
-		ptr[i] = c;
+		ptr[i] = 0;
 		i++;
 	}
-	return (s);
 }
 /*
-#include <string.h>
+#include <strings.h>
 
 int	main(void)
 {
-	char	str[50] = "Urduliz 42";
-	char	*ptr;
+	char	str[50] = "I'm going to disappear!";
 
-	ptr = ft_memset(str, 'A', 7);
+	ft_bzero(str, 7);
 	printf("Reimplemented function:\n");
-	printf("The new string is: %s\n", ptr);
-	ptr = memset (str, 'A', 7);
+	printf("The new empty string is: %s\n", str);
+	bzero (str, 7);
 	printf("Original function:\n");
-	printf("The new string is: %s\n", ptr);
+	printf("The new empty string is: %s\n", str);
 	return (0);
 }
 */

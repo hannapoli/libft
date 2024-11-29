@@ -1,20 +1,20 @@
 header VSC Linux / Windows : Ctrl + Alt + H.
-create main ONLY to check functions (in comments for each function for example)
 Check with original funcrtions
 Libft.h - comment #includes except the one we use for malloc stuff
 REMEMBER Stdheader
 return 1024(alpha), 8(alnum), etc.- internal classification used by the implementation of <ctype.h> functions
 GIT add, commit, push!
+adjust norm VSC before ev!
 
 • ft_isalpha - checks for an alphabetic character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 • ft_isdigit - checks for a digit (0 through 9). It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 • ft_isalnum - checks for an alphanumeric character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
-• ft_isascii - checks whether c is an ASCII character. 
-• ft_isprint - checks for any printable character including space. 
+• ft_isascii - checks whether c is an ASCII character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
+• ft_isprint - checks for any printable character including space. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 • ft_strlen - calculates the length of a string. 
-• ft_memset - fills a block of memory with a specific value.check the original funct 
-• bzero - function  erases  the  data  in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes  containing '\0') to that area. Return value - none.
-• memcpy - copies  n bytes from memory area src to memory area dest.  The memory areas must not overlap. returns a pointer to dest
+• ft_memset - fills a block of memory with a specific value.
+• ft_bzero - erases  the  data by writing zeros (bytes  containing '\0') to that area. It is less common and has been substituted by memset on some systems.
+• ft_memcpy - copies  n bytes from memory area src to memory area dest.  The memory areas must not overlap. returns a pointer to dest😬️
 • memmove - copies n bytes from memory area src to memory area dest.  The memory areas may overlap: copying takes place as though the  bytes in src are first copied into a temporary array that does not overlap src or dest, and the bytes are then copied from  the  temporary array to dest. returns a pointer to dest
 • ft_strlcpy - copies a string.
 • ft_strlcat - concatenates (links together) a string. It returns the total length: initial length of dst plus the length of src.  
