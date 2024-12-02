@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/29 14:51:42 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/02 13:21:13 by hpolishc         ###   ########.fr       */
+/*   Created: 2024/12/02 11:29:52 by hpolishc          #+#    #+#             */
+/*   Updated: 2024/12/02 13:21:11 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	const unsigned char	*src2;
 	unsigned char		*dest2;
@@ -20,30 +20,36 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	src2 = src;
 	dest2 = dest;
-	i = 0;
 	if (src == NULL || dest == NULL)
 		return (NULL);
-	while (i < n)
+	if (dest2 < src2 || dest2 >= (src2 + n))
 	{
-		dest2[i] = src2[i];
-		i++;
+		i = 0;
+		while (i < n)
+		{
+			dest2[i] = src2[i];
+			i++;
+		}
+	}
+	else
+	{
+		i = n;
+		while (i-- > 0)
+			dest2[i - 1] = src2[i - 1];
 	}
 	return (dest);
 }
-
 /*#include <string.h>
 
 int	main(void)
 {
 	char	src[] = "Urduliz 42";
-	char	dest[20];
+	char	dest[50];
 
-	ft_memcpy(dest, src, 7);
-	dest[7] = '\0';
+	ft_memmove(dest, src, 7);
 	printf("Reimplemented function:\n");
 	printf("The copied string: %s\n", dest);
-	memcpy(dest, src, 7);
-	dest[7] = '\0';
+	memmove(dest, src, 7);
 	printf("Original function:\n");
 	printf("The copied string: %s\n", dest);
 	return (0);

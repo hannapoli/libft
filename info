@@ -14,15 +14,14 @@ adjust norm VSC before ev!
 • ft_strlen - calculates the length of a string. 
 • ft_memset - fills a block of memory with a specific value.
 • ft_bzero - erases  the  data by writing zeros (bytes  containing '\0') to that area. It is less common and has been substituted by memset on some systems.
-• ft_memcpy - copies  n bytes from memory area src to memory area dest.  The memory areas must not overlap. returns a pointer to dest😬️
-• memmove - copies n bytes from memory area src to memory area dest.  The memory areas may overlap: copying takes place as though the  bytes in src are first copied into a temporary array that does not overlap src or dest, and the bytes are then copied from  the  temporary array to dest. returns a pointer to dest
+• ft_memcpy - copies n bytes from source memory area to destination memory area without their overlapping.
+• ft_memmove - copies n bytes from source memory area to destination memory area even when they overlap: copying takes place as though the bytes in src are first copied into a temporary array that does not overlap src or dest, and the bytes are then copied from  the  temporary array to dest.
 • ft_strlcpy - copies a string.
 • ft_strlcat - concatenates (links together) a string. It returns the total length: initial length of dst plus the length of src.  
-
 • ft_toupper - converts lowercase letters to uppercase.
 • ft_tolower - converts uppercase letters to lowercase.
-• strchr - returns a pointer to the first occurrence of the character c in the string s or NULL if the character is not found.
-• strrchr - returns a pointer to the last occurrence of  the character c in the string s or NULL if the character is not found. 
+• ft_strchr - returns a pointer to the first occurrence of the character in the string or NULL if the character is not found. 
+• ft_strrchr - returns a pointer to the last occurrence of  the character c in the string s or NULL if the character is not found. 😬️ FUNCIONA! CHECK cc,norminette, main comment and chat expl
 • strncmp - compares the two strings s1 and s2 (alphabetically?). returns an integer less than, equal to, or greater than zero if s1 (or the first n bytes thereof) is found, respectively, to be less than, to match, or be greater than s2.
 • memchr - scans  the  initial n bytes of the memory area pointed to by s for the first instance of c. return a pointer to the matching byte or NULL if the character does not occur in the given memory area.
 • memcmp - return a pointer to the matching byte or NULL if the character does not occur in the given memory area. returns  an  integer  less  than,  equal  to,  or greater than zero if the first n bytes of s1 is found, respectively, to be less than, to match, or be greater than the first n bytes of s2.
