@@ -6,6 +6,7 @@ return 1024(alpha), 8(alnum), etc.- internal classification used by the implemen
 GIT add, commit, push!
 adjust norm VSC before ev!
 
+//Part 1:
 • ft_isalpha - checks for an alphabetic character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 • ft_isdigit - checks for a digit (0 through 9). It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 • ft_isalnum - checks for an alphanumeric character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
@@ -21,9 +22,12 @@ adjust norm VSC before ev!
 • ft_toupper - converts lowercase letters to uppercase.
 • ft_tolower - converts uppercase letters to lowercase.
 • ft_strchr - returns a pointer to the first occurrence of the character in the string or NULL if the character is not found. 
-• ft_strrchr - returns a pointer to the last occurrence of  the character c in the string s or NULL if the character is not found. 😬️ FUNCIONA! CHECK cc,norminette, main comment and chat expl
-• strncmp - compares the two strings s1 and s2 (alphabetically?). returns an integer less than, equal to, or greater than zero if s1 (or the first n bytes thereof) is found, respectively, to be less than, to match, or be greater than s2.
-• memchr - scans  the  initial n bytes of the memory area pointed to by s for the first instance of c. return a pointer to the matching byte or NULL if the character does not occur in the given memory area.
+• ft_strrchr - returns a pointer to the last occurrence of  the character c in the string s or NULL if the character is not found.  
+• ft_strncmp - compares two strings lexicographically. Returns an integer less than, equal to, or greater than zero if s1 is less than, equal to, or greater than s2 respectively.
+
+• ft_memchr 😬️ - scans  the  initial n bytes of the memory area pointed to by s for the first instance of c. return a pointer to the matching byte or NULL if the character does not occur in the given memory area.
+
+CHECK EXPL. AND OTHER EXAMPLES!
 • memcmp - return a pointer to the matching byte or NULL if the character does not occur in the given memory area. returns  an  integer  less  than,  equal  to,  or greater than zero if the first n bytes of s1 is found, respectively, to be less than, to match, or be greater than the first n bytes of s2.
 • strnstr - locate a substring in a string. locates the first occurrence of the null-terminated string little in the string big, where not more than len characters are searched.  Characters that appear after a ‘\0’ character are not searched. If little is an empty string, big is returned; if little occurs nowhere in big, NULL is returned; otherwise a pointer to the first character of the first occurrence of little is returned.
 • atoi - convert a string to an integer

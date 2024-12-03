@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 18:05:38 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/02 18:53:53 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/03 09:40:43 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (NULL);
 }
-
+/*
 #include <string.h>
 
 int	main(void)
@@ -46,14 +46,15 @@ int	main(void)
 	result = ft_strrchr (str, c);
 	printf("Reimplemented function:\n");
 	if (result != NULL)
-		printf("'%c' is at the position %ld. \n", c, result - str);
+		printf("The last position of '%c' is %ld. \n", c, result - str);
 	else
 		printf("There is no '%c' character in this string.\n", c);
 	result2 = strrchr (str, c);
 	printf("Original function:\n");
 	if (result2 != NULL)
-		printf("'%c' is at the position %ld. \n", c, result2 - str);
+		printf("The last position of '%c' is %ld. \n", c, result2 - str);
 	else
 		printf("There is no '%c' character in this string.\n", c);
 	return (0);
 }
+*/
