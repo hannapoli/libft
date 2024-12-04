@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 12:20:10 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/29 11:03:47 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/04 11:27:47 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ int	main(void)
 	printf("Reimplemented function:\n");
 	printf("%d\n", ft_tolower(c1));
 	printf("%d\n", ft_tolower(c2));
+
 	printf("Original function:\n");
 	printf("%d\n", tolower(c1));
 	printf("%d\n", tolower(c2));

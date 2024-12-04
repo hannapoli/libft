@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 18:05:38 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/03 09:40:43 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/04 11:27:44 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,19 @@ int	main(void)
 {
 	const char	*str = "Born2Code";
 	char		c;
-	char		*result;
+	char		*result1;
 	char		*result2;
 	
 	c = 'o';
-	result = ft_strrchr (str, c);
 	printf("Reimplemented function:\n");
-	if (result != NULL)
-		printf("The last position of '%c' is %ld. \n", c, result - str);
+	result1 = ft_strrchr (str, c);
+	if (result1 != NULL)
+		printf("The last position of '%c' is %ld. \n", c, result1 - str);
 	else
 		printf("There is no '%c' character in this string.\n", c);
-	result2 = strrchr (str, c);
+
 	printf("Original function:\n");
+	result2 = strrchr (str, c);
 	if (result2 != NULL)
 		printf("The last position of '%c' is %ld. \n", c, result2 - str);
 	else

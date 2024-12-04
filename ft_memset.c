@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 16:38:06 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/29 15:04:40 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/04 11:27:21 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,12 @@ int	main(void)
 	char	str[50] = "Urduliz 42";
 	char	*ptr;
 
-	ptr = ft_memset(str, 'A', 7);
 	printf("Reimplemented function:\n");
+	ptr = ft_memset(str, 'A', 7);
 	printf("The new string is: %s\n", ptr);
-	ptr = memset (str, 'A', 7);
+
 	printf("Original function:\n");
+	ptr = memset (str, 'A', 7);
 	printf("The new string is: %s\n", ptr);
 	return (0);
 }

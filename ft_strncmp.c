@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 12:15:22 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/03 12:32:28 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/04 11:27:39 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int	main(void)
 		printf("'%s' is lexicographically less than '%s'. \n", str1, str2);
 	else
 		printf("'%s' is lexicographically more than '%s'. \n", str1, str2);
+
 	printf("Original function:\n");
 	result2 = strncmp(str1, str2, n);
 	if (result2 == 0)

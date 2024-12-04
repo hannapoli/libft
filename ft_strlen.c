@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 15:12:58 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/29 12:43:09 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/04 11:27:35 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int	main(void)
 	test_string = "Up2You!";
 	printf("Reimplemented function:\n");
 	printf("The length is %zu\n", ft_strlen(test_string));
+
 	printf("Original function:\n");
 	printf("The length is %zu\n", strlen(test_string));
 	return (0);

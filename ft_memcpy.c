@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 14:51:42 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/03 13:56:37 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/04 11:27:11 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,14 @@ int	main(void)
 	char	src[] = "Urduliz 42";
 	char	dest[20];
 
+	printf("Reimplemented function:\n");
 	ft_memcpy(dest, src, 7);
 	dest[7] = '\0';
-	printf("Reimplemented function:\n");
 	printf("The copied string: %s\n", dest);
+
+	printf("Original function:\n");
 	memcpy(dest, src, 7);
 	dest[7] = '\0';
-	printf("Original function:\n");
 	printf("The copied string: %s\n", dest);
 	return (0);
 }

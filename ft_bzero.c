@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 13:24:41 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/29 14:48:41 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/04 16:26:50 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int	main(void)
 	printf("Reimplemented function:\n");
 	printf("The new empty string is: %s\n", str);
 	bzero (str, 7);
+
 	printf("Original function:\n");
 	printf("The new empty string is: %s\n", str);
 	return (0);

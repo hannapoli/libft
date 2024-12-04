@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 18:14:03 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/29 11:02:20 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/04 11:28:00 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ int	main(void)
 	printf("Reimplemented function:\n");
 	printf("%d\n", ft_isalpha(c1));
 	printf("%d\n", ft_isalpha(c2));
+
 	printf("Original function:\n");
 	printf("%d\n", isalpha(c1));
 	printf("%d\n", isalpha(c2));
