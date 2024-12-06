@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hanna.poli <hanna.poli@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 16:46:20 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 12:37:03 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/06 17:21:29 by hanna.poli       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@
 # include <stdio.h>
 
 //Part 1:
-char	*ft_strchr(const char *s, int c);
+char    *ft_strchr(const char *s, int c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strrchr(const char *s, int c);
+int		ft_atoi(const char *str);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hpolishc <hpolishc@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 12:20:10 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:27:47 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/06 20:33:52 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ int	ft_tolower(int c)
 		return (c);
 }
 
-/*#include <ctype.h>
+/*
+#include <ctype.h>
 
 int	main(void)
 {

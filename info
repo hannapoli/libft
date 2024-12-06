@@ -26,9 +26,9 @@ GIT add, commit, push!
 • ft_memchr - scans  the  initial n bytes of the memory area pointed to by a string for the first instance of a character. 
 • ft_memcmp - compares the first n bytes of the memory areas of strings. 
 • ft_strnstr - locates a substring in a string. 
-• ft_atoi - 😬️ convert a string to an integer
+• ft_atoi -  convert an ASCII string to an integer.
 Para implementar estas otras dos funciones, tendrás que utilizar malloc():
-• calloc - allocates memory for an array of  nmemb  elements
+• calloc 😬️- allocates memory for an array of  nmemb  elements
        of  size bytes each and returns a pointer to the allocated memory.  The
        memory is set to zero.  If nmemb or size is 0,  then  calloc()  returns
        either  NULL,  or a unique pointer value that can later be successfully
