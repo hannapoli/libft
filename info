@@ -5,7 +5,7 @@ REMEMBER + header!!!
 return 1024(alpha), 8(alnum), etc.- internal classification used by the implementation of <ctype.h> functions
 GIT add, commit, push!
 
-//Part 1:
+Part 1 (reimplementation of the standard functions):
 • ft_isalpha - checks for an alphabetic character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 • ft_isdigit - checks for a digit (0 through 9). It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 • ft_isalnum - checks for an alphanumeric character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
@@ -27,25 +27,13 @@ GIT add, commit, push!
 • ft_memcmp - compares the first n bytes of the memory areas of strings. 
 • ft_strnstr - locates a substring in a string. 
 • ft_atoi -  convert an ASCII string to an integer.
-Para implementar estas otras dos funciones, tendrás que utilizar malloc():
-• calloc 😬️- allocates memory for an array of  nmemb  elements
-       of  size bytes each and returns a pointer to the allocated memory.  The
-       memory is set to zero.  If nmemb or size is 0,  then  calloc()  returns
-       either  NULL,  or a unique pointer value that can later be successfully
-       passed to free().  If the multiplication of nmemb and size would result
-       in  integer  overflow, then calloc() returns an error.  By contrast, an
-       integer overflow would not be detected in the following  call  to  mal‐
-       loc(),  with the result that an incorrectly sized block of memory would
-       be allocated:
 
-           malloc(nmemb * size);
-           
-           !!!!!!!!!!!! La siguiente
-instrucción sustituye lo que puedes encontrar en la página del
-manual: Si nmemb o size es 0, entonces calloc() devuelve un valor
-de puntero único que más tarde puede pasarse con éxito a free().
++malloc():
+• ft_calloc - contiguously allocates enough space for objects with defined size of memory and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero.
 
-• strdup - returns a pointer to a new string which is a duplicate of the string s.  Memory for the new string  is  obtained  with malloc(3), and can be freed with free(3).  On  success,  the strdup() function returns a pointer to the duplicated string.  It returns NULL if insufficient memory was available, with errno set to indicate the cause of the error.
+• strdup 😬️- returns a pointer to a new string which is a duplicate of the string s.  Memory for the new string  is  obtained  with malloc(3), and can be freed with free(3).  On  success,  the strdup() function returns a pointer to the duplicated string.  It returns NULL if insufficient memory was available, with errno set to indicate the cause of the error.
+
+void *malloc(size_t size);
 
 +++ aditional f
 
