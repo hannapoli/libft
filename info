@@ -1,39 +1,76 @@
-header VSC Linux / Windows : Ctrl + Alt + H.
-Check with original funcrtions
-Libft.h - comment #includes except the one we use for malloc stuff
-REMEMBER + header!!!
-return 1024(alpha), 8(alnum), etc.- internal classification used by the implementation of <ctype.h> functions
-GIT add, commit, push!
+check: strrchr, - check their functionality and check with zeus and francinette and the last updt!
 
-Part 1 (reimplementation of the standard functions):
+header VSC Linux / Windows : Ctrl + Alt + H.
+Large cows generously comes with chars and four blonde hats to defy upper gravity hero
+Check with original funcrtions
+GIT add, commit, push!
+!!!comment <stdio.h>, dellete unnecessary files, add bonus to makefile, libft.h
+
+Libft (Library of reimplemented standard C functions)
+
+Part 1: reimplementation of the standard functions:
+
+Character check:
 • ft_isalpha - checks for an alphabetic character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 • ft_isdigit - checks for a digit (0 through 9). It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 • ft_isalnum - checks for an alphanumeric character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 • ft_isascii - checks whether c is an ASCII character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 • ft_isprint - checks for any printable character including space. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
-• ft_strlen - calculates the length of a string. 
-• ft_memset - fills a block of memory with a specific value.
-• ft_bzero - erases  the  data by writing zeros (bytes  containing '\0') to that area. It is less common and has been substituted by memset on some systems.
-• ft_memcpy - copies n bytes from source memory area to destination memory area without their overlapping.
-• ft_memmove - copies n bytes from source memory area to destination memory area even when they overlap: copying takes place as though the bytes in src are first copied into a temporary array that does not overlap src or dest, and the bytes are then copied from  the  temporary array to dest.
-• ft_strlcpy - copies a string.
-• ft_strlcat - concatenates (links together) a string. It returns the total length: initial length of dst plus the length of src.  
-• ft_toupper - converts lowercase letters to uppercase.
-• ft_tolower - converts uppercase letters to lowercase.
-• ft_strchr - returns a pointer to the first occurrence of the character in the string or NULL if the character is not found. 
-• ft_strrchr - returns a pointer to the last occurrence of  the character c in the string s or NULL if the character is not found.  
-• ft_strncmp - compares two strings lexicographically. Returns an integer less than, equal to, or greater than zero if s1 is less than, equal to, or greater than s2 respectively.
-• ft_memchr - scans  the  initial n bytes of the memory area pointed to by a string for the first instance of a character. 
-• ft_memcmp - compares the first n bytes of the memory areas of strings. 
-• ft_strnstr - locates a substring in a string. 
-• ft_atoi -  convert an ASCII string to an integer.
 
-+malloc():
-• ft_calloc - contiguously allocates enough space for objects with defined size of memory and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero.
+String manipulation:
+• ft_strlen - calculates the length of a string.
+• ft_strlcpy - (string length copy) copies a string with a specified length.
+• ft_strlcat - concatenates (links together) a string with a specified length. It returns the total length: initial length of dst plus the length of src.  
+• ft_strchr - (string first character search) returns a pointer to the first occurrence of the character in the string or NULL if the character is not found. 
+• ft_strrchr - (string last character search) returns a pointer to the last occurrence of  the character c in the string s or NULL if the character is not found.  
+• ft_strncmp - (string compare) compares two strings lexicographically. Returns an integer less than, equal to, or greater than zero if s1 is less than, equal to, or greater than s2 respectively.
+• ft_strnstr - locates a substring in a string.
+• ft_strdup - (string duplicate) returns a pointer to a duplicated string.  
 
-• strdup 😬️- returns a pointer to a new string which is a duplicate of the string s.  Memory for the new string  is  obtained  with malloc(3), and can be freed with free(3).  On  success,  the strdup() function returns a pointer to the duplicated string.  It returns NULL if insufficient memory was available, with errno set to indicate the cause of the error.
+Memory for the new string  is  obtained  with malloc(3), and can be freed with free(3).  On  success,  the strdup() function returns a pointer to the duplicated string.  It returns NULL if insufficient memory was available, with errno set to indicate the cause of the error.
 
-void *malloc(size_t size);
+void *malloc(size_t size); EDIT!!!
+----------------
 
-+++ aditional f
+Memory manipulation:
+• ft_memset - (memory set) fills a block of memory with a specific value.
+• ft_bzero - (byte 0) erases  the  data by writing zeros (bytes  containing '\0') to that area. It is less common and has been substituted by memset on some systems.
+• ft_memcpy - (memory copy) copies n bytes from source memory area to destination memory area without their overlapping.
+• ft_memmove - (memory move) copies n bytes from source memory area to destination memory area even when they overlap: copying takes place as though the bytes in src are first copied into a temporary array that does not overlap src or dest, and the bytes are then copied from  the  temporary array to dest.
+• ft_memchr - (memory first character search) scans  the  initial n bytes of the memory area pointed to by a string for the first instance of a character. 
+• ft_memcmp - (memory compare) compares the first n bytes of the memory areas of strings. 
 
+Conversion:
+• ft_toupper - converts to uppercase.
+• ft_tolower - converts to lowercase.
+• ft_atoi -  converts an ASCII string to an integer.
+
+Memory allocation:
+• ft_calloc - (continuous allocation) contiguously allocates enough space for objects with defined size of memory and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero.
+
+
+
+
+Part 2: Non-standard functions:
+
+ft_substr: Extracts a substring.
+
+strjoin: 😬️ String join (concatenates multiple strings).
+
+strtrim: String trim (removes leading and trailing whitespace from a string).
+
+split: String split (splits a string into an array of substrings).
+
+itoa: Integer to ASCII conversion.
+
+strmapi: String mapping (applies a function to each character in a string).
+
+striteri: String iteration with index (applies a function to each character in a string with an index).
+
+putchar_fd: Print character to a file descriptor.
+
+putstr_fd: Print string to a file descriptor.
+
+putendl_fd: Print string with newline to a file descriptor.
+
+putnbr_fd: Print number to a file descriptor.

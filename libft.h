@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 16:46:20 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/09 00:45:33 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/09 16:11:40 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+//comment the one below
 # include <stdio.h>
 
 //Part 1:
 char	*ft_strchr(const char *s, int c);
+char	*ft_strdup(const char *s1);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_atoi(const char *str);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);

@@ -1,59 +1,67 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/02 11:29:52 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/09 23:09:17 by hpolishc         ###   ########.fr       */
+/*   Created: 2024/12/09 10:22:41 by hpolishc          #+#    #+#             */
+/*   Updated: 2024/12/09 16:05:48 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+char	*ft_strdup(const char *s1)
 {
-	const unsigned char	*src2;
-	unsigned char		*dest2;
-	size_t				i;
+	char	*dest;
+	size_t	length;
+	size_t	i;
 
-	src2 = src;
-	dest2 = dest;
+	length = 0;
 	i = 0;
-	if ((src == NULL) && (dest == NULL) && (n > 0))
+	while (s1[length] != '\0')
+		length++;
+	dest = (char *)malloc(length + 1);
+	if (dest == NULL)
 		return (NULL);
-	if ((dest2 < src2) || (dest2 >= (src2 + n)))
+	while (i < length)
 	{
-		while (i < n)
-		{
-			dest2[i] = src2[i];
-			i++;
-		}
+		dest[i] = s1[i];
+		i++;
 	}
-	else
-	{
-		i = n;
-		while (i-- > 0)
-			dest2[i] = src2[i];
-	}
+	dest[i] = '\0';
 	return (dest);
 }
-/* 
+/*
 #include <string.h>
 
 int	main(void)
 {
-	char	src[] = "Urduliz 42";
-	char	dest[50];
+	const char	*s1;
+	char		*dest;
+	char		*dest2;
 
+	s1 = "42 Born2Code";
 	printf("Reimplemented function:\n");
-	ft_memmove(dest, src, 7);
-	printf("The copied string: %s\n", dest);
+	dest = ft_strdup(s1);
+	if (dest != NULL)
+	{
+		printf("%s\n", dest);
+		free(dest);
+	}
+	else
+		printf("Memory allocation failed.\n");
 
 	printf("Original function:\n");
-	memmove(dest, src, 7);
-	printf("The copied string: %s\n", dest);
+	dest2 = strdup(s1);
+	if (dest2 != NULL)
+	{
+		printf("%s\n", dest2);
+		free(dest2);
+	}
+	else
+		printf ("Memory allocation failed.\n");
 	return (0);
 }
- */
+*/

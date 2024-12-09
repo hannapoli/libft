@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 18:05:38 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:27:44 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/09 23:30:46 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,14 @@ char	*ft_strrchr(const char *s, int c)
 	size_t	i;
 	char	character;
 
-	i = 0;
 	character = c;
-	while (s[i] != '\0')
-		i++;
-	while (i > 0)
+	i = ft_strlen(s);
+	while (i >= 0)
 	{
-		if (s[i - 1] == character)
-			return ((char *)(s + i - 1));
+		if (s[i] == character)
+			return ((char *)(s + i));
 		i--;
 	}
-	if (s[i] == character)
-		return ((char *)(s + i));
 	return (NULL);
 }
 /*
@@ -41,7 +37,7 @@ int	main(void)
 	char		c;
 	char		*result1;
 	char		*result2;
-	
+
 	c = 'o';
 	printf("Reimplemented function:\n");
 	result1 = ft_strrchr (str, c);
