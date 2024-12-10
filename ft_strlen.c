@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 15:12:58 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:27:35 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/10 12:09:12 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-
-/*#include <string.h>
+/*
+#include <string.h>
 
 int	main(void)
 {

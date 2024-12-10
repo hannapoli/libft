@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 18:05:38 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/09 23:30:46 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/10 12:30:59 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,13 @@
 char	*ft_strrchr(const char *s, int c)
 
 {
-	size_t	i;
+	int		i;
 	char	character;
 
-	character = c;
+	character = (char)c;
 	i = ft_strlen(s);
+	if (character == '\0')
+		return ((char *)(s + i));
 	while (i >= 0)
 	{
 		if (s[i] == character)

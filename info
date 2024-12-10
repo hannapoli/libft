@@ -1,5 +1,4 @@
-check: strrchr, - check their functionality and check with zeus and francinette and the last updt!
-
+Split: revise, divide, simplify *s, return(1), if (*s)...
 header VSC Linux / Windows : Ctrl + Alt + H.
 Large cows generously comes with chars and four blonde hats to defy upper gravity hero
 Check with original funcrtions
@@ -27,11 +26,6 @@ String manipulation:
 • ft_strnstr - locates a substring in a string.
 • ft_strdup - (string duplicate) returns a pointer to a duplicated string.  
 
-Memory for the new string  is  obtained  with malloc(3), and can be freed with free(3).  On  success,  the strdup() function returns a pointer to the duplicated string.  It returns NULL if insufficient memory was available, with errno set to indicate the cause of the error.
-
-void *malloc(size_t size); EDIT!!!
-----------------
-
 Memory manipulation:
 • ft_memset - (memory set) fills a block of memory with a specific value.
 • ft_bzero - (byte 0) erases  the  data by writing zeros (bytes  containing '\0') to that area. It is less common and has been substituted by memset on some systems.
@@ -53,24 +47,22 @@ Memory allocation:
 
 Part 2: Non-standard functions:
 
-ft_substr: Extracts a substring.
+• ft_substr - extracts a substring from a string.
+• ft_strjoin - concatenates strings.
+• ft_strtrim - trimms the string removing 'set' characters from the beginning and from the end of the string.
 
-strjoin: 😬️ String join (concatenates multiple strings).
+ft_split - 😬️ splits a string into an array of substrings.
 
-strtrim: String trim (removes leading and trailing whitespace from a string).
+itoa - (integer to ASCII) converts a number into an ASCII character.
 
-split: String split (splits a string into an array of substrings).
+strmapi - (string mapping) applies a function to each character in a string.
 
-itoa: Integer to ASCII conversion.
+striteri - (string iteration with index) applies a function to each character in a string with an index.
 
-strmapi: String mapping (applies a function to each character in a string).
+putchar_fd - writes a character to a file descriptor.
 
-striteri: String iteration with index (applies a function to each character in a string with an index).
+putstr_fd - writes a string to a file descriptor.
 
-putchar_fd: Print character to a file descriptor.
+putendl_fd - writes a string with a new line to a file descriptor.
 
-putstr_fd: Print string to a file descriptor.
-
-putendl_fd: Print string with newline to a file descriptor.
-
-putnbr_fd: Print number to a file descriptor.
+putnbr_fd - writes a number to a file descriptor.
