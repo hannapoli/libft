@@ -6,85 +6,108 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 16:47:25 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/10 18:44:36 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/12 17:36:32 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	count_words(const char *s, char c)
+static size_t	words_number(const char *s, char c)
 {
-	size_t	count;
+	size_t	w_number;
+	size_t	i;
 
-	count = 0;
-	while (*s != NULL)
+	w_number = 0;
+	i = 0;
+	while (s[i] != 0)
 	{
-		//siimplify *s
-		while (*s && *s == c)
-			s++;
-		if (*s && *s != c)
-		{
-			count++;
-			while (*s && *s != c)
-				s++;
-		}
+		if ((s[i] != c) && ((i == 0) || (s[i - 1] == c)))
+			w_number++;
+		i++;
 	}
-	return (count);
+	return (w_number);
 }
-static char	*copy_word(const char *s, size_t len)
+
+static char	*get_word(const char *s, size_t start, size_t end)
 {
+	size_t	len;
 	char	*word;
-	
-	word = (char *)malloc(len + 1);
+
+	len = end - start;
+	word = malloc(len + 1);
 	if (word == NULL)
 		return (NULL);
-	ft_memcpy(word, s, len);
+	ft_memcpy(word, s + start, len);
 	word[len] = '\0';
 	return (word);
 }
 
-static void	free_result(char **result, sze_t i)
+static void	free_dest(char **dest, size_t size)
 {
-	while (i--)
-		free(result[i]);
-	free(result);
+	size_t	word;
+
+	word = 0;
+	while (word < size)
+	{
+		free(dest[word]);
+		word++;
+	}
+	free(dest);
+}
+
+static int	fill_dest(const char *s, char c, char **dest, size_t word_count)
+{
+	size_t	i;
+	size_t	start;
+	size_t	word_i;
+
+	i = 0;
+	start = 0;
+	word_i = 0;
+	while ((s[i] != '\0') && (word_i < word_count))
+	{
+		if ((s[i] != c) && ((i == 0) || (s[i - 1] == c)))
+			start = i;
+		if ((s[i] != c) && ((s[i + 1] == '\0') || (s[i + 1] == c)))
+		{
+			dest[word_i] = get_word(s, start, (i + 1));
+			if (!dest[word_i])
+				return (1);
+			word_i++;
+		}
+		i++;
+	}
+	return (0);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**result;
-	size_t	i;
-	size_t	len;
+	char	**dest;
+	size_t	word_count;
 
-	i = 0;
-	len = 0;
 	if (s == NULL)
 		return (NULL);
-	result = (char **)malloc((count_words(s, c) + 1) * sizeof(char*));
-	if (result == NULL)
-		return (NULL);
-	while (*s)
+	word_count = words_number(s, c);
+	if ((s[0] == '\0') || (word_count == 0))
 	{
-		while (*s && *s == c)
-			s++;
-		while(s[len] && (s[len != c]))
-			len++;
-		if (len > 0)
-		{
-			result[i] = copy_word(s, len);
-			if (result[i] == NULL)
-			{
-				free_result(result, i);
-				return (NULL);
-			}
-			i++;
-			s += len;
-		}
+		dest = malloc(sizeof(char *));
+		if (dest == NULL)
+			return (NULL);
+		dest[0] = NULL;
+		return (dest);
 	}
-	result[i] = NULL;
-	return (result);
+	dest = malloc((word_count + 1) * sizeof(char *));
+	if (dest == NULL)
+		return (NULL);
+	if (fill_dest(s, c, dest, word_count))
+	{
+		free_dest(dest, word_count);
+		return (NULL);
+	}
+	dest[word_count] = NULL;
+	return (dest);
 }
-
+/*
 int	main(void)
 {
 	char	**final_split;
@@ -94,8 +117,8 @@ int	main(void)
 	final_split = ft_split("This split melts my brain.", ' ');
 	if (final_split == NULL)
 	{
-		print_f("Memory allocation failed. \n");
-		return (NULL);
+		printf("Memory allocation failed. \n");
+		return (1);
 	}
 	while (final_split[i])
 	{
@@ -103,11 +126,15 @@ int	main(void)
 		i++;
 	}
 	i = 0;
-	while (result[i])
+	while (final_split[i])
 	{
 		free(final_split[i]);
 		i++;
 	}
 	free (final_split);
-	return(0);
+	return (0);
 }
+*/
+/*what is result[0] = NULL? 
+is it the first character of a string result? why is it NULL? 
+and why this check is necessary?*/

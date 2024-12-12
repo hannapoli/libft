@@ -1,7 +1,6 @@
-Split: revise, divide, simplify *s, return(1), if (*s)...
 header VSC Linux / Windows : Ctrl + Alt + H.
 Large cows generously comes with chars and four blonde hats to defy upper gravity hero
-Check with original funcrtions
+Check with original functions
 GIT add, commit, push!
 !!!comment <stdio.h>, dellete unnecessary files, add bonus to makefile, libft.h
 
@@ -53,7 +52,7 @@ Part 2: Non-standard functions:
 
 ft_split - 😬️ splits a string into an array of substrings.
 
-itoa - (integer to ASCII) converts a number into an ASCII character.
+ft_itoa - (integer to ASCII) converts a number into an ASCII character.
 
 strmapi - (string mapping) applies a function to each character in a string.
 
