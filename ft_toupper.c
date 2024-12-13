@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 13:34:55 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:27:53 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:46:47 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ int	ft_toupper(int c)
 		return (c);
 }
 
-/*#include <ctype.h>
+/*
+#include <ctype.h>
+#include <stdio.h>
 
 int	main(void)
 {

@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 12:15:22 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:27:39 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:46:25 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 /*
+#include <stdio.h>
 #include <string.h>
 
 int	main(void)

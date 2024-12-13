@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 11:23:59 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 15:50:19 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:46:29 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 /*
+#include <stdio.h>
 #include <string.h>
 
 int	main(void)

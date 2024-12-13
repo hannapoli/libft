@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 16:09:30 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/09 23:30:50 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:46:41 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (substr);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	char const	*s;

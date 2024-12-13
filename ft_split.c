@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 16:47:25 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/12 17:36:32 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:55:08 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,6 +108,8 @@ char	**ft_split(char const *s, char c)
 	return (dest);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	char	**final_split;
@@ -135,6 +137,3 @@ int	main(void)
 	return (0);
 }
 */
-/*what is result[0] = NULL? 
-is it the first character of a string result? why is it NULL? 
-and why this check is necessary?*/

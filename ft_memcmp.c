@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 09:45:32 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:27:05 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:31 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 }
 /*
 #include <string.h>
+#include <stdio.h>
 
 int	main(void)
 {

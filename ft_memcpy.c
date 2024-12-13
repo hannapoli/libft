@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 14:51:42 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/09 23:30:49 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:35 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,9 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-/*#include <string.h>
+/*
+#include <stdio.h>
+#include <string.h>
 
 int	main(void)
 {

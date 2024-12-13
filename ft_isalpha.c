@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 18:14:03 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:28:00 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:10 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ int	ft_isalpha(int c)
 		return (0);
 }
 
-/*#include <ctype.h>
+/*
+#include <stdio.h>
+#include <ctype.h>
 
 int	main(void)
 {

@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 11:29:52 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/09 23:09:17 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:39 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 /* 
+#include <stdio.h>
 #include <string.h>
 
 int	main(void)

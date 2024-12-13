@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 13:24:41 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/09 00:45:37 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:01 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 /*
+#include <stdio.h>
 #include <strings.h>
 
 int	main(void)

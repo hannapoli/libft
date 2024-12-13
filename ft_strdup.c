@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 10:22:41 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/09 16:05:48 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:54 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ char	*ft_strdup(const char *s1)
 	return (dest);
 }
 /*
+#include <stdio.h>
 #include <string.h>
 
 int	main(void)

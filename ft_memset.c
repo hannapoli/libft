@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 16:38:06 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:27:21 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:42 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 /*
+#include <stdio.h>
 #include <string.h>
 
 int	main(void)

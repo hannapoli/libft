@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:33:01 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/10 13:39:04 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:57 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (main_str);
 }
 /*
+#include <stdio.h>
 int	main(void)
 {
 	char	*s1;

@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 12:02:21 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:28:09 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:22 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ int	ft_isprint(int c)
 		return (0);
 }
 
-/*#include <ctype.h>
+/*
+#include <stdio.h>
+#include <ctype.h>
 
 int	main(void)
 {

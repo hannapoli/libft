@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 11:08:36 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:28:06 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:17 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ int	ft_isdigit(int c)
 		return (0);
 }
 
-/*#include <ctype.h>
+/*
+#include <stdio.h>
+#include <ctype.h>
 
 int	main(void)
 {

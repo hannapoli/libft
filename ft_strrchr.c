@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 18:05:38 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/10 12:30:59 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:46:33 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 /*
+#include <stdio.h>
 #include <string.h>
 
 int	main(void)

@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 12:45:44 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:26:58 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:28 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 /*
+#include <stdio.h>
 #include <string.h>
 
 int	main(void)

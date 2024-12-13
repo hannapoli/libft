@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 16:55:55 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/11/29 13:08:47 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:46:03 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (length);
 }
 /*
+#include <stdio.h>
 #include <string.h>
 
 int	main(void)

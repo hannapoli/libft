@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 22:39:38 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/09 00:45:30 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:45:04 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ void	*ft_calloc(size_t count, size_t size)
 	return (ptr);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	int	*arr1;

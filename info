@@ -49,12 +49,10 @@ Part 2: Non-standard functions:
 • ft_substr - extracts a substring from a string.
 • ft_strjoin - concatenates strings.
 • ft_strtrim - trimms the string removing 'set' characters from the beginning and from the end of the string.
+• ft_split - splits a string into an array of substrings.
+• ft_itoa - (integer to ASCII) converts a number into an ASCII character.
 
-ft_split - 😬️ splits a string into an array of substrings.
-
-ft_itoa - (integer to ASCII) converts a number into an ASCII character.
-
-strmapi - (string mapping) applies a function to each character in a string.
+ft_strmapi 😬️- (string mapping) applies a function to each character in a string.
 
 striteri - (string iteration with index) applies a function to each character in a string with an index.
 

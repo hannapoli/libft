@@ -6,39 +6,68 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 14:11:56 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/12 17:36:19 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 17:35:21 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//char	*ft_itoa(int n)
-
-#include <stdio.h>
-
-void	ft_loop(int n)
+static int	ft_number_len(int n)
 {
-	int count;
+	int		count_len;
 
-	count = 0;
+	count_len = 0;
+	if (n == 0)
+		return (1);
 	if (n < 0)
-		count++;
+	{
+		n = n * (-1);
+		count_len++;
+	}
 	while (n != 0)
 	{
 		n = n / 10;
-		count++;
-		printf("%d\n", n);
+		count_len++;
 	}
-	printf("count %d\n", count);
+	return (count_len);
 }
+
+char	*ft_itoa(int n)
+{
+	int			len;
+	long int	number;
+	char		*str;
+
+	number = n;
+	len = ft_number_len(n);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (str == NULL)
+		return (NULL);
+	str[len--] = '\0';
+	if (number == 0)
+		str[0] = '0';
+	if (number < 0)
+	{
+		str[0] = '-';
+		number = -number;
+	}
+	while (number != 0)
+	{
+		str[len--] = (number % 10) + 48;
+		number = number / 10;
+	}
+	return (str);
+}
+/* 
+#include <stdio.h>
 
 int	main(void)
 {
-	int	i;
-	
-	i = -62690;
-	
-	ft_loop(i);
+	int		n;
 
-	return(0);
+	n = -42244224;
+	printf("%s\n", ft_itoa(n));
+	free(ft_itoa(n));
+	return (0);
 }
+ */

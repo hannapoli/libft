@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:42:35 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/10 17:22:42 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 10:46:38 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (trimmed);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	char	*s1;
