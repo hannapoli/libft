@@ -3,6 +3,7 @@ Large cows generously comes with chars and four blonde hats to defy upper gravit
 Check with original functions
 GIT add, commit, push!
 !!!comment <stdio.h>, dellete unnecessary files, add bonus to makefile, libft.h
+change order alphabetically in each group
 
 Libft (Library of reimplemented standard C functions)
 
@@ -42,8 +43,6 @@ Memory allocation:
 • ft_calloc - (continuous allocation) contiguously allocates enough space for objects with defined size of memory and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero.
 
 
-
-
 Part 2: Non-standard functions:
 
 • ft_substr - extracts a substring from a string.
@@ -51,15 +50,16 @@ Part 2: Non-standard functions:
 • ft_strtrim - trimms the string removing 'set' characters from the beginning and from the end of the string.
 • ft_split - splits a string into an array of substrings.
 • ft_itoa - (integer to ASCII) converts a number into an ASCII character.
+• ft_strmapi - (string mapping) applies a function to each character in a string.
+ft_striteri - (string iteration with index) applies a function to each character in a string with an index.
 
-ft_strmapi 😬️- (string mapping) applies a function to each character in a string.
-
-striteri - (string iteration with index) applies a function to each character in a string with an index.
-
-putchar_fd - writes a character to a file descriptor.
+putchar_fd 😬️ - writes a character to a file descriptor.
 
 putstr_fd - writes a string to a file descriptor.
 
 putendl_fd - writes a string with a new line to a file descriptor.
 
 putnbr_fd - writes a number to a file descriptor.
+
+
+Bonus (linked lists?):

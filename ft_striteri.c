@@ -1,40 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/26 15:12:58 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/14 03:17:47 by hpolishc         ###   ########.fr       */
+/*   Created: 2024/12/14 00:05:30 by hpolishc          #+#    #+#             */
+/*   Updated: 2024/12/14 03:20:29 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *str)
+/* 
+void	ft_test(unsigned int i, char *c)
 {
-	size_t	i;
+	if (i > 0)
+		*c = 'a';
+} */
+
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+{
+	unsigned int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	if (!s || !f)
+		return ;
+	while (s[i] != '\0')
+	{
+		f(i, &s[i]);
 		i++;
-	return (i);
+	}
 }
 /* 
 #include <stdio.h>
-#include <string.h>
 
 int	main(void)
 {
-	char	*test_string;
-
-	test_string = "Up2You!";
-	printf("Reimplemented function:\n");
-	printf("The length is %zu\n", ft_strlen(test_string));
-
-	printf("Original function:\n");
-	printf("The length is %zu\n", strlen(test_string));
-	return (0);
+	char s[] = "Hello, 42!";
+    printf("%s\n", s);
+    ft_striteri(s, ft_test);
+    printf("%s\n", s);
+    return (0);
 }
  */

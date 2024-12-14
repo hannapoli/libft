@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 16:47:25 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/13 10:55:08 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 22:47:47 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ char	**ft_split(char const *s, char c)
 	dest[word_count] = NULL;
 	return (dest);
 }
-/*
+/* 
 #include <stdio.h>
 
 int	main(void)
@@ -125,15 +125,10 @@ int	main(void)
 	while (final_split[i])
 	{
 		printf("Word %zu: %s\n", i + 1, final_split[i]);
-		i++;
-	}
-	i = 0;
-	while (final_split[i])
-	{
 		free(final_split[i]);
 		i++;
 	}
 	free (final_split);
 	return (0);
 }
-*/
+ */

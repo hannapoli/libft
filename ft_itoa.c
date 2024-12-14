@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 14:11:56 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/13 17:35:21 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 20:04:25 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,10 +64,12 @@ char	*ft_itoa(int n)
 int	main(void)
 {
 	int		n;
+	char	*dest;
 
 	n = -42244224;
-	printf("%s\n", ft_itoa(n));
-	free(ft_itoa(n));
+	dest = ft_itoa(n);
+	printf("%s\n", dest);
+	free(dest);
 	return (0);
 }
- */
+  */

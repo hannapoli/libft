@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 16:38:06 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/13 10:45:42 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 20:18:45 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,22 +26,23 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*
+/* 
 #include <stdio.h>
 #include <string.h>
 
 int	main(void)
 {
 	char	str[50] = "Urduliz 42";
-	char	*ptr;
+	char	*dest1;
+	char	*dest2;
 
 	printf("Reimplemented function:\n");
-	ptr = ft_memset(str, 'A', 7);
-	printf("The new string is: %s\n", ptr);
+	dest1 = ft_memset(str, 'A', 7);
+	printf("The new string is: %s\n", dest1);
 
 	printf("Original function:\n");
-	ptr = memset (str, 'A', 7);
-	printf("The new string is: %s\n", ptr);
+	dest2 = memset (str, 'A', 7);
+	printf("The new string is: %s\n", dest2);
 	return (0);
 }
-*/
+ */

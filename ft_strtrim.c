@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:42:35 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/13 10:46:38 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 23:29:36 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,20 +35,22 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trimmed[trim_len] = '\0';
 	return (trimmed);
 }
-/*
+/* 
 #include <stdio.h>
 
 int	main(void)
 {
 	char	*s1;
 	char	*set;
+	char	*new_string;
 
 	s1 = "13542135";
 	set = "135";
-	if (ft_strtrim(s1, set))
+	new_string = ft_strtrim(s1, set);
+	if (new_string)
 	{
-		printf("%s\n", ft_strtrim(s1, set));
-		free(ft_strtrim(s1, set));
+		printf("%s\n", new_string);
+		free(new_string);
 	}
 	else
 		printf("Memory allocation failed.\n");

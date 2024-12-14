@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 16:09:30 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/13 10:46:41 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 23:35:26 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,23 +35,23 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
-/*
+/* 
 #include <stdio.h>
 
 int	main(void)
 {
 	char const	*s;
-	char		*substr;
+	char		*extracted_substr;
 
 	s = "Hello, 42!";
-	substr = ft_substr(s, 7, 3);
-	if (substr != NULL)
+	extracted_substr = ft_substr(s, 7, 4);
+	if (extracted_substr != NULL)
 	{
-		printf("Substring: %s\n", substr);
-		free(substr);
+		printf("Substring: %s\n", extracted_substr);
+		free(extracted_substr);
 	}
 	else
 		printf("Error: Substring creation failed.\n");
 	return (0);
 }
-*/
+ */

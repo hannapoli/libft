@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 13:24:41 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/13 10:45:01 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 20:00:31 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	ft_bzero(void *s, size_t n)
 
 int	main(void)
 {
-	char	str[50] = "I'm going to disappear!";
+	char	str[50] = "This text is going to disappear!";
 
 	ft_bzero(str, 7);
 	printf("Reimplemented function:\n");

@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 09:45:32 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/13 10:45:31 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/13 20:15:28 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
+/* 
 #include <string.h>
 #include <stdio.h>
 
@@ -38,27 +38,27 @@ int	main(void)
 	const char	str1[] = "Coding";
 	const char	str2[] = "coding";
 	size_t		n;
-	int			result1;
-	int			result2;
+	int			comparison1;
+	int			comparison2;
 
 	n = 6;
 	printf("Reimplemented function:\n");
-	result1 = ft_memcmp(str1, str2, n);
-	if (result1 < 0)
+	comparison1 = ft_memcmp(str1, str2, n);
+	if (comparison1 < 0)
 		printf("The 1st string is less than the second one.\n");
-	else if (result1 > 0)
+	else if (comparison1 > 0)
 		printf("The 1st string is greater than the second one.\n");
 	else
 		printf("The strings are equal.\n");
 
 	printf("Original function:\n");
-	result2 = memcmp(str1, str2, n);
-	if (result1 < 0)
+	comparison2 = memcmp(str1, str2, n);
+	if (comparison2 < 0)
 		printf("The 1st string is less than the second one.\n");
-	else if (result1 > 0)
+	else if (comparison2 > 0)
 		printf("The 1st string is greater than the second one.\n");
 	else
 		printf("The strings are equal.\n");
 	return (0);
 }
-*/
+ */
