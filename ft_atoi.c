@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 20:13:27 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/13 12:29:29 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/14 23:21:21 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_atoi(const char *str)
 	}
 	while ((*str >= '0') && (*str <= '9'))
 	{
-		number = number * 10 + (*str - 48);
+		number = number * 10 + (*str - '0');
 		str++;
 	}
 	return (number * sign);

@@ -1,22 +1,31 @@
 header VSC Linux / Windows : Ctrl + Alt + H.
 Large cows generously comes with chars and four blonde hats to defy upper gravity hero
-Check with original functions
+
 GIT add, commit, push!
-!!!comment <stdio.h>, dellete unnecessary files, add bonus to makefile, libft.h
+
+dellete unnecessary files (move info to readme), add bonus to makefile, libft.h
 change order alphabetically in each group
+Check with original functions
+Run tests, norminette before submitting.
+Check makefile parameters and their meanings.
+check the commands from makefile and see what changes every time.
 
-Libft (Library of reimplemented standard C functions)
 
-Part 1: reimplementation of the standard functions:
+# My Libft (Library of reimplemented standard C functions) #
 
-Character check:
-• ft_isalpha - checks for an alphabetic character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
-• ft_isdigit - checks for a digit (0 through 9). It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
-• ft_isalnum - checks for an alphanumeric character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
-• ft_isascii - checks whether c is an ASCII character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
-• ft_isprint - checks for any printable character including space. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
+## Part 1: reimplementation of the standard functions: ##
 
-String manipulation:
+#### Character check: ####
+
+* ft_isalnum - checks for an alphanumeric character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
+* ft_isalpha - checks for an alphabetic character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
+* ft_isascii - checks whether c is an ASCII character. It returns a non-zero value if it’s an alphabetic character, else it returns 0.
+* ft_isdigit - checks for a digit (0 through 9). It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
+* ft_isprint - checks for any printable character including space. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
+
+
+#### String manipulation: ####
+
 • ft_strlen - calculates the length of a string.
 • ft_strlcpy - (string length copy) copies a string with a specified length.
 • ft_strlcat - concatenates (links together) a string with a specified length. It returns the total length: initial length of dst plus the length of src.  
@@ -24,42 +33,58 @@ String manipulation:
 • ft_strrchr - (string last character search) returns a pointer to the last occurrence of  the character c in the string s or NULL if the character is not found.  
 • ft_strncmp - (string compare) compares two strings lexicographically. Returns an integer less than, equal to, or greater than zero if s1 is less than, equal to, or greater than s2 respectively.
 • ft_strnstr - locates a substring in a string.
-• ft_strdup - (string duplicate) returns a pointer to a duplicated string.  
+• ft_strdup - (string duplicate) returns a pointer to a duplicated string.
+ 
 
-Memory manipulation:
+#### Memory manipulation: ####
+
 • ft_memset - (memory set) fills a block of memory with a specific value.
 • ft_bzero - (byte 0) erases  the  data by writing zeros (bytes  containing '\0') to that area. It is less common and has been substituted by memset on some systems.
 • ft_memcpy - (memory copy) copies n bytes from source memory area to destination memory area without their overlapping.
 • ft_memmove - (memory move) copies n bytes from source memory area to destination memory area even when they overlap: copying takes place as though the bytes in src are first copied into a temporary array that does not overlap src or dest, and the bytes are then copied from  the  temporary array to dest.
 • ft_memchr - (memory first character search) scans  the  initial n bytes of the memory area pointed to by a string for the first instance of a character. 
-• ft_memcmp - (memory compare) compares the first n bytes of the memory areas of strings. 
+• ft_memcmp - (memory compare) compares the first n bytes of the memory areas of strings.
+ 
 
-Conversion:
-• ft_toupper - converts to uppercase.
-• ft_tolower - converts to lowercase.
-• ft_atoi -  converts an ASCII string to an integer.
+#### Conversion: ####
 
-Memory allocation:
-• ft_calloc - (continuous allocation) contiguously allocates enough space for objects with defined size of memory and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero.
+* ft_atoi -  converts an ASCII string to an integer.
+* ft_tolower - converts to lowercase.
+* ft_toupper - converts to uppercase.
 
 
-Part 2: Non-standard functions:
+#### Memory allocation: ####
 
-• ft_substr - extracts a substring from a string.
-• ft_strjoin - concatenates strings.
-• ft_strtrim - trimms the string removing 'set' characters from the beginning and from the end of the string.
-• ft_split - splits a string into an array of substrings.
-• ft_itoa - (integer to ASCII) converts a number into an ASCII character.
-• ft_strmapi - (string mapping) applies a function to each character in a string.
-ft_striteri - (string iteration with index) applies a function to each character in a string with an index.
+* ft_calloc - (continuous allocation) contiguously allocates enough space for objects with defined size of memory and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero.
 
-putchar_fd 😬️ - writes a character to a file descriptor.
 
-putstr_fd - writes a string to a file descriptor.
+## Part 2: Non-standard functions: ##
 
-putendl_fd - writes a string with a new line to a file descriptor.
+#### String manipulation: ####
 
+* ft_split - splits a string into an array of substrings.
+* ft_striteri - (string iteration with index) applies a function to each character in a string with an index.
+* ft_strjoin - concatenates strings.
+* ft_strmapi - (string mapping) applies a function to each character in a string.
+* ft_strtrim - trims the string removing 'set' characters from the beginning and from the end of the string.
+* ft_substr - extracts a substring from a string.
+
+
+#### Conversion: ####
+
+* ft_itoa - (integer to ASCII) converts a number into an ASCII character.
+
+
+#### Writing to a FD (file descriptor): ####
+
+* putchar_fd - writes a character to a file descriptor.
+* putendl_fd - writes a string with a new line to a file descriptor.
 putnbr_fd - writes a number to a file descriptor.
+* putstr_fd - writes a string to a file descriptor.
 
 
-Bonus (linked lists?):
+## Bonus (Lists manipulation): ##
+
+* ft_lstnew - is designed to create a new node for a singly linked list in C.
+* ft_lstadd_front - adds a new node at the beginning of an existing list.
+* 

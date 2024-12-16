@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 14:11:56 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/13 20:04:25 by hpolishc         ###   ########.fr       */
+/*   Updated: 2024/12/14 23:20:58 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ char	*ft_itoa(int n)
 	}
 	while (number != 0)
 	{
-		str[len--] = (number % 10) + 48;
+		str[len--] = (number % 10) + '0';
 		number = number / 10;
 	}
 	return (str);
