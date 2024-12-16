@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/15 21:37:50 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/16 12:34:19 by hpolishc         ###   ########.fr       */
+/*   Created: 2024/12/16 01:04:01 by hpolishc          #+#    #+#             */
+/*   Updated: 2024/12/16 11:08:29 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+int	ft_lstsize(t_list *lst)
 {
-	if ((lst != NULL) || (new != NULL))
+	int		count;
+	t_list	*head;
+
+	count = 0;
+	head = lst;
+	while (head != NULL)
 	{
-		new->next = *lst;
-		*lst = new;
+		count++;
+		head = head->next;
 	}
+	return (count);
 }
-/* 
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -28,21 +34,14 @@ int	main(void)
 	t_list	*head;
 	t_list	*new_node1;
 	t_list	*new_node2;
-	t_list	*lst;
 	t_list	*temp;
 
-	head = ft_lstnew("First Node");
-	new_node1 = ft_lstnew("New Node 1");
+	head = ft_lstnew("Node1");
+	new_node1 = ft_lstnew("Node2");
 	ft_lstadd_front(&head, new_node1);
-	new_node2 = ft_lstnew("New Node 2");
+	new_node2 = ft_lstnew("Node3");
 	ft_lstadd_front(&head, new_node2);
-	lst = head;
-	while (lst != NULL)
-	{
-		printf("%s -> ", (char *)(lst->content));
-		lst = lst->next;
-	}
-	printf("NULL\n");
+	printf("The size of this list: %d\n", ft_lstsize(head));
 	while (head != NULL)
 	{
 		temp = head->next;
@@ -51,4 +50,4 @@ int	main(void)
 	}
 	return (0);
 }
- */
+*/

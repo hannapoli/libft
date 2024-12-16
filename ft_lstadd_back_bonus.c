@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/15 21:37:50 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/16 12:34:19 by hpolishc         ###   ########.fr       */
+/*   Created: 2024/12/16 11:53:36 by hpolishc          #+#    #+#             */
+/*   Updated: 2024/12/16 13:30:47 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	if ((lst != NULL) || (new != NULL))
+	t_list	*last;
+
+	if ((lst == NULL) || (new == NULL))
+		return ;
+	if (*lst == NULL)
 	{
-		new->next = *lst;
 		*lst = new;
+		return ;
 	}
+	last = ft_lstlast(*lst);
+	last->next = new;
 }
 /* 
 #include <stdio.h>
@@ -26,16 +32,16 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 int	main(void)
 {
 	t_list	*head;
-	t_list	*new_node1;
-	t_list	*new_node2;
+	t_list	*new_node;
+	t_list	*last_node;
 	t_list	*lst;
 	t_list	*temp;
 
-	head = ft_lstnew("First Node");
-	new_node1 = ft_lstnew("New Node 1");
-	ft_lstadd_front(&head, new_node1);
-	new_node2 = ft_lstnew("New Node 2");
-	ft_lstadd_front(&head, new_node2);
+	head = ft_lstnew("Node1");
+	new_node = ft_lstnew("Node2");
+	last_node = ft_lstnew("Last Node");
+	ft_lstadd_back(&head, new_node);
+	ft_lstadd_back(&head, last_node);
 	lst = head;
 	while (lst != NULL)
 	{

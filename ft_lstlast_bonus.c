@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/15 21:37:50 by hpolishc          #+#    #+#             */
-/*   Updated: 2024/12/16 12:34:19 by hpolishc         ###   ########.fr       */
+/*   Created: 2024/12/16 11:09:56 by hpolishc          #+#    #+#             */
+/*   Updated: 2024/12/16 12:39:05 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+t_list	*ft_lstlast(t_list *lst)
 {
-	if ((lst != NULL) || (new != NULL))
-	{
-		new->next = *lst;
-		*lst = new;
-	}
+	t_list	*last;
+
+	if (lst == NULL)
+		return (NULL);
+	last = lst;
+	while (last->next != NULL)
+		last = last->next;
+	return (last);
 }
 /* 
 #include <stdio.h>
@@ -27,22 +30,17 @@ int	main(void)
 {
 	t_list	*head;
 	t_list	*new_node1;
-	t_list	*new_node2;
-	t_list	*lst;
+	t_list	*last_node;
 	t_list	*temp;
 
-	head = ft_lstnew("First Node");
-	new_node1 = ft_lstnew("New Node 1");
+	head = ft_lstnew("Node1 (first becomes last)");
+	new_node1 = ft_lstnew("Node2");
 	ft_lstadd_front(&head, new_node1);
-	new_node2 = ft_lstnew("New Node 2");
-	ft_lstadd_front(&head, new_node2);
-	lst = head;
-	while (lst != NULL)
-	{
-		printf("%s -> ", (char *)(lst->content));
-		lst = lst->next;
-	}
-	printf("NULL\n");
+	last_node = ft_lstlast(head);
+	if (last_node != NULL)
+		printf("Content of the last node: %s\n", (char *)(last_node->content));
+	else
+		printf("Empty list.\n");
 	while (head != NULL)
 	{
 		temp = head->next;

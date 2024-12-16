@@ -87,4 +87,10 @@ putnbr_fd - writes a number to a file descriptor.
 
 * ft_lstnew - is designed to create a new node for a singly linked list in C.
 * ft_lstadd_front - adds a new node at the beginning of an existing list.
-* 
+* ft_lstsize - counts the number of nodes in a list.
+* ft_lstlast - returns the last node of the list.
+* ft_lstadd_back - adds a new node at the end of an existing list.
+* ft_lstdelone - is used to delete a single node from a linked list by freeing the memory allocated for the content of the node using a provided 'del function' and then freeing the memory allocated for the node itself.
+* ft_lstclear - is used to delete all the nodes from a linked list using the function 'del' and free(3). At the end, the pointer to the list has to be NULL.
+* ft_lstiter - iterates over the list and applies the function to the content of every node.
+* ft_lstmap -  iterates the list 'lst' and applies the function in the content of every node. Creates a list resulting from the correct and successive application of the function ‘f’ on each node. The function ‘del’ is used to remove the content of a node, if necessary.
