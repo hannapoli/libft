@@ -1,6 +1,6 @@
-# My Libft (Library of reimplemented standard C functions) #
+# My Libft (Library of reimplemented functions in C) #
 
-## Part 1: reimplementation of the standard functions: ##
+## Part 1: Reimplementation of the standard functions: ##
 
 #### Character check: ####
 
