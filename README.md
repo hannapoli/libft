@@ -1,4 +1,5 @@
-# My Libft (Library of reimplemented functions in C) #
+# My Libft #
+# (Library of reimplemented functions in C) #
 
 ## Part 1: Reimplementation of the standard functions: ##
 
