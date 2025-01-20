@@ -1,5 +1,5 @@
 # My Libft #
-# (Library of reimplemented functions in C) #
+# Library of reimplemented functions in C #
 
 ## Part 1: Reimplementation of the standard functions: ##
 
