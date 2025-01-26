@@ -43,7 +43,7 @@
 
 #### Memory allocation: ####
 
-* `ft_calloc` - (continuous allocation) contiguously allocates enough space for objects with defined size of memory and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero.
+* `ft_calloc` - (continuous allocation) contiguously allocates enough space for objects with defined size of memory and returns a pointer to the allocated memory. It initializes each block of memory with a default value of ‘0’.
 
 
 ## Part 2: Non-standard functions: ##
