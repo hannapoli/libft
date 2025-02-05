@@ -1,9 +1,9 @@
-# My Libft #
+# 📚 My Libft #
 # Library of reimplemented functions in C #
 
 ## Part 1: Reimplementation of the standard functions: ##
 
-#### Character check: ####
+#### 🔤 Character check: ####
 
 * `ft_isalnum` - checks for an alphanumeric character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 * `ft_isalpha` - checks for an alphabetic character. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
@@ -12,7 +12,7 @@
 * `ft_isprint` - checks for any printable character including space. It returns a non-zero value if it’s an alphabetic character, else it returns 0. 
 
 
-#### String manipulation: ####
+#### ⛓ String manipulation: ####
 
 * `ft_strchr` - (string first character search) returns a pointer to the first occurrence of the character in the string or NULL if the character is not found.
 * `ft_strdup` - (string duplicate) returns a pointer to a duplicated string.
@@ -24,7 +24,7 @@
 * `ft_strnstr` - locates a substring in a string.
 
 
-#### Memory manipulation: ####
+#### 🤯 Memory manipulation: ####
 
 * `ft_bzero` - (byte 0) erases  the  data by writing zeros (bytes  containing '\0') to that area. It is less common and has been substituted by memset on some systems.
 * `ft_memchr` - (memory first character search) scans  the  initial n bytes of the memory area pointed to by a string for the first instance of a character.
@@ -34,21 +34,21 @@
 * `ft_memset` - (memory set) fills a block of memory with a specific value.
 
 
-#### Conversion: ####
+#### 🅰️ ➡️ 6️⃣5️⃣ Conversion: ####
 
 * `ft_atoi` -  converts an ASCII string to an integer.
 * `ft_tolower` - converts to lowercase.
 * `ft_toupper` - converts to uppercase.
 
 
-#### Memory allocation: ####
+#### 🧠 Memory allocation: ####
 
 * `ft_calloc` - (continuous allocation) contiguously allocates enough space for objects with defined size of memory and returns a pointer to the allocated memory. It initializes each block of memory with a default value of ‘0’.
 
 
 ## Part 2: Non-standard functions: ##
 
-#### String manipulation: ####
+#### ⛓ String manipulation: ####
 
 * `ft_split` - splits a string into an array of substrings.
 * `ft_striteri` - (string iteration with index) applies a function to each character in a string with an index.
@@ -58,12 +58,12 @@
 * `ft_substr` - extracts a substring from a string.
 
 
-#### Conversion: ####
+#### 6️⃣5️⃣ ➡️ 🅰️ Conversion: ####
 
 * `ft_itoa` - (integer to ASCII) converts a number into an ASCII character.
 
 
-#### Writing to a FD (file descriptor): ####
+#### 🗂 Writing to a FD (file descriptor): ####
 
 * `putchar_fd` - writes a character to a file descriptor.
 * `putendl_fd` - writes a string with a new line to a file descriptor.
@@ -71,7 +71,7 @@
 * `putstr_fd` - writes a string to a file descriptor.
 
 
-## Bonus (Lists manipulation): ##
+## 🌟 Bonus 📄➡️📑 (Lists manipulation): ##
 
 * `ft_lstnew` - is designed to create a new node for a singly linked list in C.
 * `ft_lstadd_front` - adds a new node at the beginning of an existing list.
